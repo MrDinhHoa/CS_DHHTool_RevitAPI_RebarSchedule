@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{352ED054-A707-4F37-B9EE-D9B2441F7082}</ProjectGuid>
+    <ProjectGuid>{949E188F-0BE6-49F0-8855-E1097FD94479}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RSBeam_2DCrossSection</RootNamespace>
     <AssemblyName>RSBeam_2DCrossSection</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -35,7 +35,7 @@
       <HintPath>..\..\00.CS_Library\BIMSoftLib.dll</HintPath>
     </Reference>
     <Reference Include="DHHLibrary">
-      <HintPath>..\..\01.CS_DHHTool_LibraryAPI\00-00.DHHLibrary\bin\Debug\DHHLibrary.dll</HintPath>
+      <HintPath>..\..\02.CS_DHHTool_LibraryAPI\00-00.DHHLibrary\bin\Debug\DHHLibrary.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -66,14 +66,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MVVM\Model\" />
-    <Folder Include="MVVM\ViewModel\" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="MVVM\View\vMainRS2DCrossSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MVVM\Model\" />
+    <Folder Include="MVVM\ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
