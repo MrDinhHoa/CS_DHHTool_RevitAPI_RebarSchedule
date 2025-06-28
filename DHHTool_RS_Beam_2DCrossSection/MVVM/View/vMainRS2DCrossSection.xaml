@@ -20,7 +20,6 @@
                 Style="{DynamicResource ButtonStyle}"
                 Content="2D Cross Section"
                 Command="{Binding OpenRS2DCrossSectionCommand}" />
-
         </StackPanel>
 
     </Grid>
