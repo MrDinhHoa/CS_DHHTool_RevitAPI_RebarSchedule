@@ -6,6 +6,9 @@
              xmlns:local="clr-namespace:DHHTool_RS_Beam_2DCrossSection.MVVM.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+<Window.Source>
+</Window.Source>
+
     <Grid>
             <Grid>
             </Grid>
