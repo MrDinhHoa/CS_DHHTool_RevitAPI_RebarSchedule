@@ -9,18 +9,52 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <Window.Resources>
-        <ResourceDictionary Source="pack://application:,,,/DHHLibrary;component/Themes/Themes.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/DHHLibrary;component/Themes/Themes.xaml" />
     </Window.Resources>
     <Grid>
-        <StackPanel>
-            <TextBox
-                Style="{DynamicResource TextBoxStyle}"
-                Text="RS Beam 2D Cross Section" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="42" />
+        </Grid.RowDefinitions>
+        <DataGrid
+            AlternatingRowBackground="AliceBlue"
+            AlternationCount="2"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            ItemsSource="{Binding DgSectionBeam}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Binding="{Binding BeamName}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock Text="Name" />
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTemplateColumn Width="120" Header="Chọn dầm">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button
+                                    Command="{Binding CreateSectionDetail}"
+                                    CommandParameter="{Binding ElementName=CreateSectionWin}"
+                                    Content="Sửa"
+                                    Style="{DynamicResource DHHButtonStyle}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DockPanel Grid.Row="1">
             <Button
-                Style="{DynamicResource ButtonStyle}"
-                Content="2D Cross Section"
-                Command="{Binding OpenRS2DCrossSectionCommand}" />
-        </StackPanel>
-
+                Command="{Binding CreateSectionDetail}"
+                CommandParameter="{Binding ElementName=CreateSectionWin}"
+                Content="OK"
+                DockPanel.Dock="Right"
+                Style="{DynamicResource DHHButtonStyle}" />
+            <Button
+                HorizontalAlignment="Right"
+                Command="{Binding FileExcelOpen}"
+                Content="Tệp Excel"
+                Style="{DynamicResource DHHButtonStyle}" />
+        </DockPanel>
     </Grid>
 </Window>
