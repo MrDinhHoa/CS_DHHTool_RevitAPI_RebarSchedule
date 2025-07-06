@@ -48,14 +48,14 @@
         </DataGrid>
         <DockPanel Grid.Row="1">
             <Button
-                Margin="4"
+                Margin="5"
                 Command="{Binding CreateSectionDetail}"
                 CommandParameter="{Binding ElementName=CreateSectionWin2}"
                 Content="OK"
                 DockPanel.Dock="Right"
                 Style="{DynamicResource ButtonStyle}"/>
             <Button
-                Margin="4"
+                Margin="5"
                 HorizontalAlignment="Right"
                 Command="{Binding FileExcelOpen}"
                 Content="Tệp Excel"
