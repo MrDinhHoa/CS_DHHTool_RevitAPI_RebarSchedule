@@ -43,13 +43,14 @@
         </DataGrid>
         <DockPanel Grid.Row="1">
             <Button
-                Style="{DynamicResource DHHButtonStyle}"
+                Width="100"
                 Command="{Binding CreateSectionDetail}"
                 CommandParameter="{Binding ElementName=CreateSectionWin}"
                 Content="OK"
                 DockPanel.Dock="Right"
-                />
+                Style="{DynamicResource DHHButtonStyle}" />
             <Button
+                Width="100"
                 HorizontalAlignment="Right"
                 Command="{Binding FileExcelOpen}"
                 Content="Tệp Excel"

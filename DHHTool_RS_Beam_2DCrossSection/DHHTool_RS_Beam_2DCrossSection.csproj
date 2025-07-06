@@ -35,9 +35,9 @@
     <Reference Include="BIMSoftLib">
       <HintPath>..\..\00.CS_Library\BIMSoftLib.dll</HintPath>
     </Reference>
-    <Reference Include="DHHLibrary">
+    <Reference Include="DHHLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\02.CS_DHHTool_LibraryAPI\00-00.DHHLibrary\bin\Debug\DHHLibrary.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
