@@ -17,8 +17,6 @@
             <RowDefinition Height="42" />
         </Grid.RowDefinitions>
         <DataGrid
-            AlternatingRowBackground="AliceBlue"
-            AlternationCount="2"
             AutoGenerateColumns="False"
             CanUserAddRows="False"
             ItemsSource="{Binding DgSectionBeam}">
@@ -45,11 +43,12 @@
         </DataGrid>
         <DockPanel Grid.Row="1">
             <Button
+                Style="{DynamicResource DHHButtonStyle}"
                 Command="{Binding CreateSectionDetail}"
                 CommandParameter="{Binding ElementName=CreateSectionWin}"
                 Content="OK"
                 DockPanel.Dock="Right"
-                Style="{DynamicResource DHHButtonStyle}" />
+                />
             <Button
                 HorizontalAlignment="Right"
                 Command="{Binding FileExcelOpen}"
