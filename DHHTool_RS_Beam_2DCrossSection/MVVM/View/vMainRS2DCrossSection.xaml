@@ -8,6 +8,7 @@
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
+
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -54,7 +55,7 @@
                 DockPanel.Dock="Right"
                 Style="{DynamicResource ButtonStyle}"/>
             <Button
-                Margin="4"               
+                Margin="4"
                 HorizontalAlignment="Right"
                 Command="{Binding FileExcelOpen}"
                 Content="Tệp Excel"
