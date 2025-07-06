@@ -49,16 +49,16 @@
         <DockPanel Grid.Row="1">
             <Button
                 Margin="5"
-                Command="{Binding CreateSectionDetail}"
+                Command="{Binding BtnOK}"
                 CommandParameter="{Binding ElementName=CreateSectionWin2}"
-                Content="OK"
+                Content="Đồng ý"
                 DockPanel.Dock="Right"
                 Style="{DynamicResource ButtonStyle}"/>
             <Button
                 Margin="5"
                 HorizontalAlignment="Right"
-                Command="{Binding FileExcelOpen}"
-                Content="Tệp Excel"
+                Command="{Binding BtnCancel}"
+                Content="Hủy bỏ"
                 Style="{DynamicResource ButtonStyle}"/>
         </DockPanel>
     </Grid>
