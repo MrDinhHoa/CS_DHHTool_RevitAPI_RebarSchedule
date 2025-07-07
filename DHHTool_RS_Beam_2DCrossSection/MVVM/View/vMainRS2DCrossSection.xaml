@@ -48,7 +48,6 @@
         </DataGrid>
         <DockPanel Grid.Row="1">
             <Button
-                Margin="5"
                 Command="{Binding BtnOK}"
                 CommandParameter="{Binding ElementName=CreateSectionWin2}"
                 Content="Đồng ý"
