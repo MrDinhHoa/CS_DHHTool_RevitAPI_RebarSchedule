@@ -1,7 +1,8 @@
 ﻿using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
-using DHHTool_RS_Beam_2DCrossSection.MVVM.View;
+using DHHTool_RS_Beam_2DCrossSection;
+using RSBeam_2DCrossSection.MVVM.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace DHHTool_RS_Beam_2DCrossSection
                 using (TransactionGroup transGroup = new TransactionGroup(document))
                 {
                     transGroup.Start("Thống kê thép dầm");
-                    vMainRS2DCrossSection win = new vMainRS2DCrossSection();
+                    vMainRS2DBeamCrossSection win = new vMainRS2DBeamCrossSection();
                     bool? dialog = win.ShowDialog();
                     if (dialog != false)
                         return Result.Succeeded;
