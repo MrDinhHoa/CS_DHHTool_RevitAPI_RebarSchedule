@@ -16,7 +16,6 @@ D:\STUDY\Programming\C-Sharp\06.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Bea
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\RSBeam_2DCrossSection.dll
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\RSBeam_2DCrossSection.pdb
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\BIMSoftLib.dll
-D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\DHHLibrary.pdb
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\DHHTool_RS_Beam_2DCrossSection.csproj.AssemblyReference.cache
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\MVVM\View\vMainRS2DCrossSection.g.cs
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\RSBeam_2DCrossSection_MarkupCompile.cache
@@ -27,3 +26,5 @@ D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\DHHTool_RS_Beam_2DCrossSection.csproj.CopyComplete
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\RSBeam_2DCrossSection.dll
 D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\obj\Debug\RSBeam_2DCrossSection.pdb
+D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\DHHLibrary.dll
+D:\01_WORKING\00. C-Sharp\05.CS_DHHTool_RevitAPI_RebarSchedule\DHHTool_RS_Beam_2DCrossSection\bin\Debug\DHHLibrary.pdb
