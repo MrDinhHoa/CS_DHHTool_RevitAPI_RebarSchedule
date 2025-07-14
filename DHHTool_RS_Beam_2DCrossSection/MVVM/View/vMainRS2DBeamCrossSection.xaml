@@ -1,4 +1,5 @@
 ﻿<Window x:Class="RSBeam_2DCrossSection.MVVM.View.vMainRS2DBeamCrossSection"
+x:Name="RS2DBeamCrossSectionWIN"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -34,8 +35,8 @@
                             <StackPanel Orientation="Horizontal">
                                 <Button
                                     Command="{Binding CreateSectionDetail}"
-                                    CommandParameter="{Binding ElementName=CreateSectionWin}"
-                                    Content="Sửa" />
+                                    CommandParameter="{Binding ElementName=RS2DBeamCrossSectionWIN}"
+									Content="Sửa" />
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -47,13 +48,13 @@
                 Margin="5"
                 Command="{Binding BtnOK}"
                 Style="{DynamicResource ButtonStyle}"
-                CommandParameter="{Binding ElementName=CreateSectionWin2}"
+                CommandParameter="{Binding ElementName=RS2DBeamCrossSectionWIN}"
                 Content="Đồng ý"
                 DockPanel.Dock="Right" />
             <Button
                 Margin="5"
                 Style="{DynamicResource ButtonStyle}"
-                HorizontalAlignment="Right"
+                CommandParrameter="{Binfing ElementName=RS2DBeamCrossSectionWIN}"
                 Command="{Binding BtnCancel}"
                 Content="Hủy bỏ" />
         </DockPanel>
