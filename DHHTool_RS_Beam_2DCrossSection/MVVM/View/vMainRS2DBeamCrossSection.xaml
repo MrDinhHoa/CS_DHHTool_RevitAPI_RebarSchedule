@@ -1,6 +1,6 @@
 ﻿<Window x:Class="RSBeam_2DCrossSection.MVVM.View.vMainRS2DBeamCrossSection"
-x:Name="RS2DBeamCrossSectionWIN"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        x:Name="RS2DBeamCrossSectionWIN"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -26,10 +26,15 @@ x:Name="RS2DBeamCrossSectionWIN"
             <DataGrid.Columns>
                 <DataGridTextColumn Width="*" Binding="{Binding BeamName}">
                     <DataGridTextColumn.Header>
-                        <TextBlock Text="Name" />
+                        <TextBlock Text="Tên dầm" />
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>
-                <DataGridTemplateColumn Width="120" Header="Chọn dầm">
+                <DataGridTemplateColumn Width="120">
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="Tên cột" Style="{DynamicResource TextBlockStyle}" TextAlignment="Center"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -43,18 +48,23 @@ x:Name="RS2DBeamCrossSectionWIN"
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <DockPanel Grid.Row="1">
+        <DockPanel Grid.Row="1" LastChildFill="True" HorizontalAlignment="Right">
+            <Button
+                Margin="5"
+                Command="{Binding BtnLoadDetail}"
+                Style="{DynamicResource ButtonStyle}"
+                CommandParameter="{Binding ElementName=RS2DBeamCrossSectionWIN}"
+                Content="Load chi tiết"/>
             <Button
                 Margin="5"
                 Command="{Binding BtnOK}"
                 Style="{DynamicResource ButtonStyle}"
                 CommandParameter="{Binding ElementName=RS2DBeamCrossSectionWIN}"
-                Content="Đồng ý"
-                DockPanel.Dock="Right" />
+                Content="Đồng ý"/>
             <Button
                 Margin="5"
                 Style="{DynamicResource ButtonStyle}"
-                CommandParrameter="{Binfing ElementName=RS2DBeamCrossSectionWIN}"
+                CommandParameter="{Binding ElementName=RS2DBeamCrossSectionWIN}"
                 Command="{Binding BtnCancel}"
                 Content="Hủy bỏ" />
         </DockPanel>
